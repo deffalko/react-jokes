@@ -1,1 +1,1 @@
-# react-jokes
+# react-jokes в разработке
