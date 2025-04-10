@@ -37,3 +37,12 @@ nav {
 .card-content {
   flex: 1; /* Заставляет этот блок занимать все доступное пространство */
 }
+.basket {
+  position: absolute;
+  right: 124px;
+  top: 124px;
+}
+.basket-icon {
+  font-size: 3.4rem;
+  cursor: pointer;
+}
