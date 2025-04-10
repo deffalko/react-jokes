@@ -42,6 +42,7 @@ nav {
 }
 .basket-box {
   display: flex;
+  border: 1px solid black;
   gap: 15px;
   position: absolute;
   top: 50%; /* Сдвигаем вниз на 50% высоты родителя */
@@ -50,7 +51,7 @@ nav {
     -50%,
     -50%
   ); /* Сдвигаем элемент обратно на его половину */
-  background-color: lightblue; /* Цвет фона элемента */
+  background-color: #fdd835; /* Цвет фона элемента */
   text-align: center; /* Выравнивание текста по центру */
   line-height: 100px; /* Вертикальное выравнивание текста */
   padding: 15px;
@@ -67,4 +68,31 @@ nav {
 }
 .basket-tytle {
   font-size: 20px;
+}
+.alert {
+  position: absolute;
+  right: 180px;
+  top: 82px;
+}
+.radio-buttons {
+  display: flex;
+  gap: 10px;
+}
+.btn {
+  background-color: #fdd835;
+}
+.collection.with-header .collection-item {
+  background-color: #ed7aff;
+}
+.fade-in {
+  opacity: 0; /* Начальная прозрачность */
+  transform: translateY(20px); /* Начальное смещение вниз */
+  animation: fadeIn 0.5s forwards; /* Запуск анимации */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Конечная прозрачность */
+    transform: translateY(0); /* Конечное смещение */
+  }
 }
