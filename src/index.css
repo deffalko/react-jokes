@@ -38,11 +38,33 @@ nav {
   flex: 1; /* Заставляет этот блок занимать все доступное пространство */
 }
 .basket {
+  width: 500px;
+}
+.basket-box {
+  display: flex;
+  gap: 15px;
   position: absolute;
-  right: 124px;
-  top: 124px;
+  top: 50%; /* Сдвигаем вниз на 50% высоты родителя */
+  left: 50%; /* Сдвигаем вправо на 50% ширины родителя */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Сдвигаем элемент обратно на его половину */
+  background-color: lightblue; /* Цвет фона элемента */
+  text-align: center; /* Выравнивание текста по центру */
+  line-height: 100px; /* Вертикальное выравнивание текста */
+  padding: 15px;
 }
 .basket-icon {
   font-size: 3.4rem;
   cursor: pointer;
+  position: absolute;
+  right: 124px;
+  top: 124px;
+}
+.basket-close {
+  cursor: pointer;
+}
+.basket-tytle {
+  font-size: 20px;
 }
